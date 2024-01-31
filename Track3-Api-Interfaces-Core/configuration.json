@@ -1,0 +1,21 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/seguimiento/{everything}",
+      "Downstreamschema": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "slnxtest01",
+          "port": "5023"
+        }
+      ],
+      "UpstreamPathTemplate": "/seguimiento/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5145",
+    "AdministrationPath": "/administration"
+  }
+}
